@@ -128,7 +128,6 @@ void *read_syslog(logreader *lf, int *rc, int drop_it) {
             __ms = 0;
         }
         fgetpos(lf->fp, &fp_pos);
-        continue;
     }
 
     mdebug2("Read %d lines from %s", lines, lf->file);
